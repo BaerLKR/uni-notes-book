@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html lang="de" class="ayu" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Existenz und Eindeutigkeit von Lösungen - uni</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../.././mdbook-admonish.css">
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../../studium.html"><strong aria-hidden="true">1.</strong> Intro</a></li><li class="spacer"></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Vorkurs Mathe</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">2.1.</strong> 1. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../vorkurs/mathe/binomische_formeln.html"><strong aria-hidden="true">2.1.1.</strong> binomische Fromeln</a></li><li class="chapter-item "><a href="../../vorkurs/mathe/bruchrechnung.html"><strong aria-hidden="true">2.1.2.</strong> Bruchrechenregeln</a></li><li class="chapter-item "><a href="../../vorkurs/mathe/potenzrechnung.html"><strong aria-hidden="true">2.1.3.</strong> Potenzrechenregeln</a></li><li class="chapter-item "><a href="../../vorkurs/mathe/schubfachprinzip.html"><strong aria-hidden="true">2.1.4.</strong> Schubfachprinzip</a></li><li class="chapter-item "><a href="../../vorkurs/mathe/satz_von_vieta.html"><strong aria-hidden="true">2.1.5.</strong> Satz von Vieta</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.2.</strong> 2. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../vorkurs/mathe/axiome.html"><strong aria-hidden="true">2.2.1.</strong> Axiome</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../vorkurs/mathe/sphaerische_geometrie.html"><strong aria-hidden="true">2.2.1.1.</strong> sphärische Geometrie</a></li></ol></li><li class="chapter-item "><a href="../../vorkurs/mathe/aussagen.html"><strong aria-hidden="true">2.2.2.</strong> Aussagen</a></li><li class="chapter-item "><a href="../../vorkurs/mathe/quantoren.html"><strong aria-hidden="true">2.2.3.</strong> Quantoren</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.3.</strong> 3. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../vorkurs/mathe/beweistechniken.html"><strong aria-hidden="true">2.3.1.</strong> Beweistechniken</a></li><li class="chapter-item "><a href="../../vorkurs/mathe/definitionen.html"><strong aria-hidden="true">2.3.2.</strong> Definitionen</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.4.</strong> 4. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../vorkurs/mathe/mengenlehre.html"><strong aria-hidden="true">2.4.1.</strong> Mengenlehre</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.5.</strong> 5. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../vorkurs/mathe/gleichungen.html"><strong aria-hidden="true">2.5.1.</strong> Gleichungen</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.6.</strong> 6. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../vorkurs/mathe/abbildungen.html"><strong aria-hidden="true">2.6.1.</strong> Abbildungen</a></li><li class="chapter-item "><a href="../../vorkurs/mathe/polynom.html"><strong aria-hidden="true">2.6.2.</strong> Polynomdivision</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.7.</strong> 7. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../vorkurs/mathe/loesungen.html" class="active"><strong aria-hidden="true">2.7.1.</strong> Existenz und Eindeutigkeit von Lösungen</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.8.</strong> 8. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../vorkurs/mathe/beweistechniken2.html"><strong aria-hidden="true">2.8.1.</strong> Beweistechniken 2</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.9.</strong> 10. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../vorkurs/mathe/komplex.html"><strong aria-hidden="true">2.9.1.</strong> komplexe Zahlen</a></li></ol></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">3.</strong> Vorkurs Informatik</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">3.1.</strong> 2. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../vorkurs/info/binaer.html"><strong aria-hidden="true">3.1.1.</strong> Binärsystem</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">uni</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://gitlab.olaf.one/pacman/uni-notes" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="existenz-und-eindeutigkeit-von-lösungen"><a class="header" href="#existenz-und-eindeutigkeit-von-lösungen">Existenz und Eindeutigkeit von Lösungen</a></h2>
+<p>Für ein Polynom n-ten Grades gibt es:</p>
+<ul>
+<li>höchstens n Lösungen</li>
+<li>wenn n ungerade ist mindestens eine Lösung</li>
+</ul>
+<h3 id="substitution"><a class="header" href="#substitution">Substitution</a></h3>
+<p>Die Substitution ist eine gute Option um Lösungen zu finden.</p>
+<p>\[
+x^4 - 13 x^2 + 36 = 0 \\
+u := x^2 \\
+u^2 - 13u + 36 = 0 \\
+u_{1,2} = \frac{12}{2} \pm \sqrt{(\frac{13}{2})^2 - 36} \\
+u_1 = 9, \space u_2 = 4 \\
+\mathbb{L} = \{-3, -2, 2, 3\}
+\]</p>
+<div id="admonition-note" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-title">
+<div class="admonition-title">
+<div id="admonition-note-title">
+<p>Note</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-note"></a>
+</div>
+<div>
+<p>Polynome und vorallem Gleichungssysteme wannimmer möglich geometrisch betrachten. Denn Gleichungssysteme sind nur mehrere Geraden/Flächen/... in einem Raum \(\mathbb{X^n}\). Und verhalten sich
+hinsichtlich iherer Schnittpunkte und der Menge an Schnittpunkten auch so.</p>
+</div>
+</div>
+<h3 id="primfaktorzerlegung"><a class="header" href="#primfaktorzerlegung">Primfaktorzerlegung</a></h3>
+<blockquote>
+<p>Primzahlahlen sind die Atome der natürlichen Zahlen</p>
+</blockquote>
+<p>Sei \(n \in \mathbb{N}\). Dann heißen Primzahlen \(p_1, ..., p_m \) Primfaktorzerlegung von _n*, falls \(n = \displaystyle\prod^{m}_{i=0}{p_i}\).</p>
+<p>\(n \in \mathbb{N}, n \ge 2\). Dann existiert eine Primfaktorzerlegung von <em>n</em>, die bis auf die Reihenfolge der Faktoren eindeutig ist.</p>
+<h4 id="existenz"><a class="header" href="#existenz">Existenz</a></h4>
+<p>Ist <em>n</em> prim, so ist die Aussage trivial.</p>
+<p>Angenommen es gibt ein <em>n</em>, für das keine Primfaktorzerlegung existiert. Dann gibt es ein kleinstes <em>n</em>. <em>n</em> kann keine Primzahl sein, also \(n = kl\) mit \(1 &lt; k,l &lt; n\).
+Also existierten für <em>k</em> und <em>l</em> Primfaktorzerlegung, da <em>n</em> die kleinste Zahl ohne Primfaktorzerlegung ist. Die Vereinigung der beiden Primfaktorzerlegung von <em>k</em> und <em>l</em> ist die
+Primfaktorzerlegung von <em>n</em>.</p>
+<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div class="admonition-title">
+<div id="admonition-info-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-info"></a>
+</div>
+<div>
+<p>Diese Methode nennt sich &quot;Prinzip des kleinsten Verbrechers&quot;</p>
+</div>
+</div>
+<h4 id="eindeutigkeit"><a class="header" href="#eindeutigkeit">Eindeutigkeit</a></h4>
+<p>Angenommen die Primfaktorzerlegung ist nicht eindeutig für \(n \in \mathbb{N}\).</p>
+<p>Wenn <em>n</em> prim, ist es eindeutig.</p>
+<p>Wir können o.B.d.A die kleinste Zahl <em>n</em> wählen für die die Primfaktorzerlegung nicht eindeutig ist. Dann gibt es Primzahlen \(p*1 \le ... \le p*m\) und \(q_1 \le ... \le q_l\) mit
+\(\displaystyle\prod_{i = 0}^{m}{p_i}\) und \(\displaystyle\prod_{i = 0}^{l}{q_i}\). Es gilt \(\{p_1, ... , p_m\}\cap\{q_1, ... , q_l\} = \emptyset\) da wir die kleinste Zahl gewählt
+haben.</p>
+<p>\[
+p_1^2 \ge n, \space q_1^2 \ge n \text{ da } q_2 \ge q_1 \text{ und } l \ge 2 \\
+\implies p_1 q_1 = \sqrt{p_1^2 q_1^2} \le \sqrt{n^2} = n \\
+k := n - q_1 p_1 \ge 0 \\
+\text{Es gilt } q_1 \mid k \text{ da } q_1 \text{ ein Teiler von } n \\
+\text{also } q_1 p_1 \mid k \\
+\text{Andererseits gilt auch} p_1 q_1 \mid (k+p_1q_1) = n
+\]
+Wegen \(\frac{n}{p_1} &lt; n\) muss die Primfaktorzerlegung von \(\frac{n}{p_1}\) eindeutig sein, nämlich \(\{p_2, ... , p_m\}\).
+Wegen \(q \mid \frac{n}{p_1}\) gibt es \(\{r_1, ... , r_s\}\) mit \(\frac{n}{p_1} = q_1 \times r_1 \times ... \times r_s\) als kleinste Zahl mit einer nicht eindeutigen Primfaktorzerlegung.
+Also wurde ein Wiederspruch festgestellt.</p>
+<div id="admonition-note-1" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-1-title">
+<div class="admonition-title">
+<div id="admonition-note-1-title">
+<p>Note</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-note-1"></a>
+</div>
+<div>
+<p>Aus meiner Sicht ergibt es Sinn über solche Beweise als rekursive Struktur nachzudenken die eben einen Wiederspruch ergibt, da sie nie terminiert. Denn der Beweis müsste auf das nun kleinste
+Element angewandt werden, dann auf das nun kleinste, dann ...</p>
+</div>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../vorkurs/mathe/polynom.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../vorkurs/mathe/beweistechniken2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../vorkurs/mathe/polynom.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../vorkurs/mathe/beweistechniken2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

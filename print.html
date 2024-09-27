@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="de" class="light" dir="ltr">
+<html lang="de" class="ayu" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -40,7 +40,7 @@
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -65,7 +65,7 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('light')
+            html.classList.remove('ayu')
             html.classList.add(theme);
             var body = document.querySelector('body');
             body.classList.remove('no-js')
@@ -92,7 +92,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Chapter 1</a></li></ol>
+                <ol class="chapter"><li class="chapter-item "><a href="studium.html"><strong aria-hidden="true">1.</strong> Intro</a></li><li class="spacer"></li><li class="chapter-item "><div><strong aria-hidden="true">2.</strong> Vorkurs Mathe</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">2.1.</strong> 1. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="vorkurs/mathe/binomische_formeln.html"><strong aria-hidden="true">2.1.1.</strong> binomische Fromeln</a></li><li class="chapter-item "><a href="vorkurs/mathe/bruchrechnung.html"><strong aria-hidden="true">2.1.2.</strong> Bruchrechenregeln</a></li><li class="chapter-item "><a href="vorkurs/mathe/potenzrechnung.html"><strong aria-hidden="true">2.1.3.</strong> Potenzrechenregeln</a></li><li class="chapter-item "><a href="vorkurs/mathe/schubfachprinzip.html"><strong aria-hidden="true">2.1.4.</strong> Schubfachprinzip</a></li><li class="chapter-item "><a href="vorkurs/mathe/satz_von_vieta.html"><strong aria-hidden="true">2.1.5.</strong> Satz von Vieta</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.2.</strong> 2. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="vorkurs/mathe/axiome.html"><strong aria-hidden="true">2.2.1.</strong> Axiome</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="vorkurs/mathe/sphaerische_geometrie.html"><strong aria-hidden="true">2.2.1.1.</strong> sphärische Geometrie</a></li></ol></li><li class="chapter-item "><a href="vorkurs/mathe/aussagen.html"><strong aria-hidden="true">2.2.2.</strong> Aussagen</a></li><li class="chapter-item "><a href="vorkurs/mathe/quantoren.html"><strong aria-hidden="true">2.2.3.</strong> Quantoren</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.3.</strong> 3. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="vorkurs/mathe/beweistechniken.html"><strong aria-hidden="true">2.3.1.</strong> Beweistechniken</a></li><li class="chapter-item "><a href="vorkurs/mathe/definitionen.html"><strong aria-hidden="true">2.3.2.</strong> Definitionen</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.4.</strong> 4. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="vorkurs/mathe/mengenlehre.html"><strong aria-hidden="true">2.4.1.</strong> Mengenlehre</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.5.</strong> 5. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="vorkurs/mathe/gleichungen.html"><strong aria-hidden="true">2.5.1.</strong> Gleichungen</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.6.</strong> 6. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="vorkurs/mathe/abbildungen.html"><strong aria-hidden="true">2.6.1.</strong> Abbildungen</a></li><li class="chapter-item "><a href="vorkurs/mathe/polynom.html"><strong aria-hidden="true">2.6.2.</strong> Polynomdivision</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.7.</strong> 7. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="vorkurs/mathe/loesungen.html"><strong aria-hidden="true">2.7.1.</strong> Existenz und Eindeutigkeit von Lösungen</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.8.</strong> 8. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="vorkurs/mathe/beweistechniken2.html"><strong aria-hidden="true">2.8.1.</strong> Beweistechniken 2</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.9.</strong> 10. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="vorkurs/mathe/komplex.html"><strong aria-hidden="true">2.9.1.</strong> komplexe Zahlen</a></li></ol></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">3.</strong> Vorkurs Informatik</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">3.1.</strong> 2. Vorlesung</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="vorkurs/info/binaer.html"><strong aria-hidden="true">3.1.1.</strong> Binärsystem</a></li></ol></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -149,6 +149,9 @@
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
+                        <a href="https://gitlab.olaf.one/pacman/uni-notes" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
 
                     </div>
                 </div>
@@ -175,7 +178,522 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="chapter-1"><a class="header" href="#chapter-1">Chapter 1</a></h1>
+                        <h1 id="intro"><a class="header" href="#intro">Intro</a></h1>
+<p>Hallo, du hast meine Unimitschriften gefunden.</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="wiederholung-der-binomischen-formeln"><a class="header" href="#wiederholung-der-binomischen-formeln">Wiederholung der binomischen Formeln</a></h2>
+<p>$$ (a+b)^2 = a^2 + 2ab + b^2$$
+$$ (a-b)^2 = a^2 - 2ab + b^2$$
+$$ (a-b)(a+b) = a^2-b^2$$</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="wiederholung-der-bruchrechenregeln"><a class="header" href="#wiederholung-der-bruchrechenregeln">Wiederholung der Bruchrechenregeln</a></h2>
+<p>$$ \frac{a}{b} \pm \frac{c}{d} = \frac{ad \pm cb}{db} $$
+$$ \frac{a}{b} \times \frac{c}{d} = \frac{ac}{bd} $$
+$$ \frac{\frac{a}{b}}{\frac{c}{d}} = \frac{ad}{bc}$$</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="wiederholung-der-potenzrechenregeln"><a class="header" href="#wiederholung-der-potenzrechenregeln">Wiederholung der Potenzrechenregeln</a></h2>
+<p>$$ x^ay^a = (xy)^a $$
+$$ \frac{x^a}{y^a} = (\frac{x}{y})^a $$
+$$ x^ax^b = x^{a+b} $$
+$$ \frac{x^a}{x^b} = x^{a-b} $$
+$$ (x^a)^b = x^{ab} $$</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="einführung-in-das-vormale-beweisen-von-aussagen-in-der-mathematik"><a class="header" href="#einführung-in-das-vormale-beweisen-von-aussagen-in-der-mathematik">Einführung in das Vormale beweisen von Aussagen in der Mathematik</a></h2>
+<p>Mittels des Schubfachprinzips. Ein einleuchtendes Beispiel mit bedeutenderen Implikationen.</p>
+<p>Wie sich intuitiv auch schon argumentieren lässt muss es eine Dopplung geben, wenn es ein Objekt mehr als Kategorien gibt.</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="satz-von-vieta"><a class="header" href="#satz-von-vieta">Satz von Vieta</a></h2>
+<p>$$ x^2 + px + q = 0 $$
+$$ x_1 + x_2 = -p $$
+$$ x_1 \times x_2 = q $$</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="axiome"><a class="header" href="#axiome">Axiome</a></h2>
+<p>Axiome sind die Grundlagen aller mathematischen Argumentationen. Sie bilden den Grundstein, von dem alles abgeleitet wird.
+Sie fungieren als &quot;Spielregeln&quot; für mathematische Überlegungen. Daher sind mathematische Aussagen/Annahmen auch immer nur für ein bestimmtes Axiomsystem gültig.</p>
+<h3 id="natürliche-zahlen"><a class="header" href="#natürliche-zahlen">Natürliche Zahlen</a></h3>
+<ol>
+<li>0 ist eine natürliche Zahl</li>
+<li>Jede natürliche Zahl \(n\) hat einen Nachfolger \(n'\) (\(N(n) = n'\))</li>
+<li>0 ist kein Nachfolger einer natürlichen Zahl</li>
+<li>Natürliche Zahlen mit gleichem Nachfolger sind gleich</li>
+<li>Enthält eine Menge (\(M\)) die 0 und mit jeder natürlichen Zahl auch alle iherer Nachfolger, so ist \(\mathbb{N} \subset M\)</li>
+</ol>
+<p>Diese Axiome beschreiben die natürlichen Zahlen in allen ihren Eigenschaften, ohne mehr zu beschreiben. Mit anderen Worten, <strong>so viel wie nötig, so wenig wie möglich</strong>.</p>
+<h3 id="gültigkeitsbereiche"><a class="header" href="#gültigkeitsbereiche">Gültigkeitsbereiche</a></h3>
+<p>Ein Axiom das wir in der &quot;normalen&quot; Geometrie verwenden ist das Parallelenaxiom. Es definiert, dass es <strong>genau eine</strong> Gerade \(h\) gibt, die parallel zu \(g\) und
+durch den Punkt \(P\) verläuft.
+Dieses Axiom im Besonderen stand lange unter Verdacht unnötig zu sein, allerdings gibt es auch Geometrien, in denen dieser nicht gilt.</p>
+<p>Dies kann man zum Beispiel an der Innenwinkelsumme eines Dreiecks erkennen. Die kann auf 180° gefolgert werden weil es eine Parallele zu der Grundfläche des Dreiecks
+gibt die druch die gegenüberliegende Ecke verläuft. Die Stufen und Wechselwinkel ergeben dann einen halben Kreis, also 180°.
+In anderen geometrischen Systemen ist das nicht so; im <a href="vorkurs/mathe/./sphaerische_geometrie.html">sphärischen</a> ist die Innenwinkelsumme größer oder im hyperbolischen kleiner.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="sphärische-geometrie"><a class="header" href="#sphärische-geometrie">Sphärische Geometrie</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="aussagen"><a class="header" href="#aussagen">Aussagen</a></h2>
+<p><strong>Eine mathematische Aussage ist ein Satz dem eindeutig ein Wahrheitswert zugeordnet werden kann.</strong></p>
+<h3 id="aussagenlogik"><a class="header" href="#aussagenlogik">Aussagenlogik</a></h3>
+<p><em>A</em> und <em>B</em> seien Aussagen:</p>
+<div class="table-wrapper"><table><thead><tr><th>Operation</th><th>Schreibweise</th><th>Aussprache</th></tr></thead><tbody>
+<tr><td>Negation</td><td>\(\neg A\)</td><td>&quot;nicht A&quot;</td></tr>
+<tr><td>Konjunktion</td><td>\(A \land B\)</td><td>&quot;A und B&quot;</td></tr>
+<tr><td>Disjunktion</td><td>\(A \lor B \)</td><td>&quot;A oder B&quot;</td></tr>
+<tr><td>Implikation</td><td>\(A \implies B\)</td><td>&quot;aus A folgt B&quot; oder &quot;A impliziert B&quot;</td></tr>
+<tr><td>Äquivalenz</td><td>\(A \Leftrightarrow B\)</td><td>&quot;A und B sind äquivalent&quot;</td></tr>
+</tbody></table>
+</div>
+<h4 id="veranschaulichung-implikation"><a class="header" href="#veranschaulichung-implikation">Veranschaulichung Implikation</a></h4>
+<p>\[A \implies B \]</p>
+<ul>
+<li>A: &quot;Es regnet&quot;</li>
+<li>B: &quot;Die Erde wird nass&quot;</li>
+</ul>
+<p>Die Erde kann auch nass werden wenn es regnet. Daher ist die Aussage falsch wenn A wahr ist die Erde aber trotzdem nass wird, weil der Zusammenhang anscheinend
+falsch ist. Genau so auch beim gegenteiligen Beispiel, es regnet nicht, dann muss die Gesamtaussage, also die Implikation falsch sein.</p>
+<h4 id="wahrheitstabelle"><a class="header" href="#wahrheitstabelle">Wahrheitstabelle</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>A</th><th>B</th><th>\(\neg A\)</th><th>\(A \land B\)</th><th>\(A \lor B \)</th><th>\(A \implies B\)</th><th>\(A \Leftrightarrow B\)</th></tr></thead><tbody>
+<tr><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+</tbody></table>
+</div>
+<h4 id="negationsbeispiele"><a class="header" href="#negationsbeispiele">Negationsbeispiele</a></h4>
+<h4 id="umformen"><a class="header" href="#umformen">Umformen</a></h4>
+<p>Man kann zeigen, dass zwei Aussagen gleichbedeutend sind indem man alle Eingabewerte überrpüft. Wenn die Gesamtaussage immer gleich ist, sind die Aussagen
+gleichbedeutend. (zB.: \((\neg(A \implies B))\equiv A\land(\neg B)\))</p>
+<p>Es gibt Aussagendie immer wahr sind (<strong>Tautologien</strong>):
+$$ A \lor (\neg A) $$</p>
+<p>Man kann auf beiden Seiten den Term negieren. Zu zeigen:</p>
+<p>$$ \neg(A \lor B) \equiv (\neg A) \land (\neg B) $$
+$$ B = \neg B'; A = \neg A' $$
+$$ \neg([\neg A']\lor[\neg B']) \equiv A'\land B' $$
+$$ (\neg A') \lor (\neg B') \equiv \neg(A' \land B') $$</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="quantoren"><a class="header" href="#quantoren">Quantoren</a></h2>
+<p>Eine verkürtzte Scheibweise für mathematische Aussagen die Zahlen betreffen:</p>
+<div class="table-wrapper"><table><thead><tr><th>Symbol</th><th>Bedeutung</th></tr></thead><tbody>
+<tr><td>\(\exists\)</td><td>Es existiert</td></tr>
+<tr><td>\(\exists!\)</td><td>Es existiert genau ein</td></tr>
+<tr><td>\(\nexists\)</td><td>Es existiert kein</td></tr>
+<tr><td>\(\forall\)</td><td>für alle</td></tr>
+</tbody></table>
+</div>
+<h3 id="beispielaussagen"><a class="header" href="#beispielaussagen">Beispielaussagen</a></h3>
+<p>$$\exists y \in \mathbb{N}: \text{y ist prim (wahr)}$$
+$$\exists! x \in \mathbb{R}: x^2 = 2 \text{ (falsch)}$$
+$$ \forall x \in \mathbb{R}: x^2 \geqslant 0 \text{ (wahr) }$$</p>
+<div id="admonition-warning" class="admonition admonish-warning" role="note" aria-labelledby="admonition-warning-title">
+<div class="admonition-title">
+<div id="admonition-warning-title">
+<p>Warning</p>
+</div>
+<a class="admonition-anchor-link" href="vorkurs/mathe/quantoren.html#admonition-warning"></a>
+</div>
+<div>
+<p><strong>Verwechselungsgefahr!</strong></p>
+<p>$$\exists y\in\mathbb{R}\space\forall x\epsilon\mathbb{R}\backslash 0: xy = 1$$
+&quot;Es gibt eine rationale Zahl y die mit allen rationalen Zahlen x, die nicht null sind eins ergibt&quot;
+$$\forall x\in\mathbb{R}\backslash{0}\space\exists y\epsilon\mathbb{R}: xy = 1$$
+&quot;alle rationalen Zahlen x, die nicht null sind haben eine rationale Zahl y mit der multipliziert sie eins ergeben&quot;</p>
+<p>Die erste Aussage ist falsch, die zweite wahr.</p>
+</div>
+</div>
+<p>Die Reihenfolge ist also relevant. Daher denke ich über diese Aussagen als curried functions. Das eine element wurde im partial applyment schon fix gesetzt.
+Alternativ ist die Methode sich die Aussage als Schleife darzustellen auch eine Option, aber ich finde das curring passender, weil es reicht die &quot;Signatur&quot; der
+Aussage beachten muss und nicht mental die Schleife bauen muss.</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="beweistechniken"><a class="header" href="#beweistechniken">Beweistechniken</a></h2>
+<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div class="admonition-title">
+<div id="admonition-info-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="vorkurs/mathe/beweistechniken.html#admonition-info"></a>
+</div>
+<div>
+<p>Bei Beweisen wird häufig <strong>o.B.d.A.</strong> (ohne Einschränkung der Allgemeinheit) geschrieben. Das bedeutet dass die zusäzliche Annahme nicht bedeutet, dass der Beweis nicht für alle (allgemeinen)
+Fälle anwendbar ist, sondern nur dass diese Form erreicht werden muss um dem Beweis zu folgen.</p>
+</div>
+</div>
+<h3 id="direkter-beweis"><a class="header" href="#direkter-beweis">direkter Beweis</a></h3>
+<p>Bsp:</p>
+<p>ist \(n \in \mathbb{N}\) ungerade, dann ist auch \(n^2\) ungerade. Beweis:</p>
+<p>Sei \(n \in \mathbb{N}\) ungerade. Dann gilt \(n = 2k + 1\). Daraus folgt
+$$ (2k-1)^2 = (2k)^2 - 4k + 1 $$
+$$ \iff 4k^2-4k+1 $$
+$$ \iff 2(2k^2 -2k) + 1 \Rightarrow \text{ ungerade }$$</p>
+<h3 id="beweis-durch-fallunterscheidung"><a class="header" href="#beweis-durch-fallunterscheidung">Beweis durch Fallunterscheidung</a></h3>
+<p>Bsp:</p>
+<p>$$ \forall n \in \mathbb{Z}: n^2+3n+7 \text{ ungerade } $$
+Beweis:</p>
+<ol>
+<li>
+<p><strong>erster Fall</strong> n ist gerade</p>
+<p>\(\exists k \in \mathbb{Z}: n = 2k\)</p>
+<p>\(n^2 + 3n + 7 &lt;= 2k^2 + 23k + 7\)</p>
+<p>\(\iff 2(k^2+3k+3)+1\Rightarrow \text{ ungerade }\)</p>
+</li>
+<li>
+<p><strong>zweiter Fall</strong> n ist ungerade</p>
+<p>\(\exists k \in \mathbb{Z}: n = 2k + 1\)</p>
+<p>\(n^2 + 3n + 7 = (2k+1)^2 + 3(2k+1) + 7\)</p>
+<p>\(\iff 4k^2 + 4k +1 + 6k + 3+ 7\)</p>
+<p>\(\iff 4k^2 + 10k + 11\)</p>
+<p>\(\iff 2(2k^2+5k+5)+1 \Rightarrow \text{ ungerade }\)</p>
+</li>
+</ol>
+<div id="admonition-info-1" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-1-title">
+<div class="admonition-title">
+<div id="admonition-info-1-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="vorkurs/mathe/beweistechniken.html#admonition-info-1"></a>
+</div>
+<div>
+<p>eine Fallunterscheidung kann in Aussagenlogik geschrieben werden:</p>
+<p>\[A \equiv (A \land C)\lor(A\land(\neg C))\]</p>
+</div>
+</div>
+<h3 id="wiederspruchsprinzip"><a class="header" href="#wiederspruchsprinzip">Wiederspruchsprinzip</a></h3>
+<p>Die Summe einer rationalen und einer irrationalen Zahl ist irrational.
+Beweis:</p>
+<p>\(x,y \in \mathbb{R})\) mit x rational und y irrational. Also gibt es \(p,q,r,s \in \mathbb{R};\space q \ne 0, s \ne 0\)
+mit \(x = \frac{p}{q}\) und \(x + y = \frac{p}{s}\). Dann ist \[y = \frac{r}{s}-\frac{p}{q} = \frac{rq - ps}{sq}\] rational. Das steht im Wiederspruch zur Aussage. Damit ist gezeigt dass
+diese Zahl nicht rational ist, also ist sie irrational.</p>
+<div id="admonition-info-2" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-2-title">
+<div class="admonition-title">
+<div id="admonition-info-2-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="vorkurs/mathe/beweistechniken.html#admonition-info-2"></a>
+</div>
+<div>
+<p>alle Irrationalitätsbeweise folgen dem Wiederspruchsprinzip</p>
+</div>
+</div>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="definitionen"><a class="header" href="#definitionen">Definitionen</a></h2>
+<p>$$ x \in \mathbb{R} $$</p>
+<p>\[ |x| := \begin{cases}
+{
+\text{ x, falls } x \ge 0
+} \newline
+{
+\text{ -x, falls } x &lt; 0
+}
+\end{cases}
+\]</p>
+<p>Eine Definition definiert einen Wert, eine Aussage oder eine Funktion. Diese wird als Wahrheit angenommen und muss nicht bewiesen werden. Sie kann dann als Argumentationsgrundlage genutzt werden.</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="mengenlehre"><a class="header" href="#mengenlehre">Mengenlehre</a></h2>
+<p>Eine Menge ist die Menge der Objekte die eine Bedingung erfüllen/eine Gemeinsamkeit haben.</p>
+<p>Es gibt die leere Menge (\(\emptyset\)). Bei Beweisen die diese Menge betreffen verwendet man häufig <a href="vorkurs/mathe/./beweistechniken.html">die Wiederspruchstechnik</a>.</p>
+<p>Seien <em>X</em>,<em>Y</em>,<em>Z</em> Mengen</p>
+<ol>
+<li>\(X \subseteq X\)</li>
+<li>aus \((X \subseteq Y)\land(Y \subseteq Z)\) folgt \(X \subseteq Z\)</li>
+<li>\(X = Y\) genau dann wenn (gdw.) \((X \subseteq Y)\land(Y\subseteq X)\) (so werden auch Beweise hinsichtlich der Gleichheit aufgestellt)</li>
+</ol>
+<pre><code class="language-haskell">-- Logischerweise große Ähnlichkeiten zu list comprehensions
+[ x^2 | x &lt;- [1..] ]
+</code></pre>
+<p>Aber ich möchte an der Stelle sagen, dass eine Liste und eine Menge nicht gleichbedeutend sind. Zum einen ist eine Menge immer dedupliziert und vorallem hält sie keine Werte sondern ist nur die
+Sammlung aller Objekte die etwas erfüllen.</p>
+<p>Eine weitere Programmiereranalogie ist der Vergleich zwischen der Teilmenge (\(\subseteq\)) und dem Element (\(\in\)). Ersteres kommt einer slice einer Liste gleich und letzteres ist wie der
+Name nahe legt ein Element der Liste, also kein Teilausschnitt, sondern ein Element, selbst wenn es selbst eine Liste ist.</p>
+<p>\(\{ x^2 | x \in \mathbb{N} \}\) oder \(\{p \in \mathbb{N} | \exists n \in \mathbb{N}: p = n^2\}\)</p>
+<p>Seien <em>X</em>,<em>Y</em> Mengen.</p>
+<ul>
+<li>\(X \subseteq Y\) (&quot;X subset von Y&quot;). \[(x \in X)\implies(x \in Y)\]</li>
+<li>\(X \subsetneq Y\) (&quot;X ist eine echte Teilmenge von Y&quot;, \(|X| &lt; |Y|\)) \[\exists x \in Y: \notin X\]</li>
+</ul>
+<h3 id="konstruktion-von-mengen"><a class="header" href="#konstruktion-von-mengen">Konstruktion von Mengen</a></h3>
+<ol>
+<li>Vereinigungsmenge \(X \cup Y = \{x \in Y \lor x \in X\}\)</li>
+<li>Schnittmenge \(X \cap Y = \{x \in X \land x \in Y\}\)</li>
+<li>Differenzmenge \(X \diagdown Y = \{x \in X \land x \notin Y\}\)</li>
+</ol>
+<h3 id="de-morgansche-regel"><a class="header" href="#de-morgansche-regel">De Morgansche Regel</a></h3>
+<ol>
+<li>\(X \cap (Y_1 \cup Y_2) = (X \cap Y_1)\cup(X \cap Y_2)\)</li>
+<li>\(X \cup (Y_1 \cap Y_2) = (X \cup Y_1)\cap(X \cup Y_2)\)</li>
+<li>\(X \diagdown (Y_1 \cup Y_2) = (X\diagdown Y_1)\cap(X\diagdown Y_2)\)</li>
+<li>\(X \diagdown (Y_1 \cap Y_2) = (X\diagdown Y_1)\cup(X\diagdown Y_2)\)</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="gleichungen-und-ungleichungen"><a class="header" href="#gleichungen-und-ungleichungen">Gleichungen und Ungleichungen</a></h2>
+<p>Jede Gleichung und Ungleichung haben eine Definitionsmenge und eine Lösungsmenge.</p>
+<p>Die Definitionsmenge ist der Zahlenraum in dem die Gleichung gültig ist. Das kann aus dem Sachzusammenhang hervorgehen oder aber auch um Umformungen zu erlauben die in einer größeren Definitionsmengedie Ergebnisse verändern. So zum Beispiel das Quadrieren, es ist keine Äquivalenzumformung da \(x + y \implies x^2 + y^2 \not\Rightarrow x + y\), denn \(x^2 + y^2 \implies x^2 \pm y^2\)
+(\(x^3\) ist aber eine Äquivalenzumformung, da das Vorzeichen &quot;erhalten&quot; bleibt).</p>
+<blockquote>
+<p>\(\mathbb{D}\) muss so gewählt werden, dass bei Umformungen keine Konflikte entstehen.
+Außerdem ermöglicht die Einschränkung des Definitionsbereichs eine Fallunterscheidung (zB. um die Zahl, die nicht enthalten ist).</p>
+</blockquote>
+<p>\[
+(x^2 - 2)(x^2 - 1) = 0 \\
+\text{Für }\mathbb{D} = \mathbb{R} \space x = 1, -1, \sqrt{2}, -\sqrt{2} \\
+\text{Für }\mathbb{D} = \mathbb{Z} \space x = 1, -1
+\]</p>
+<h3 id="quadratische-ergänzung"><a class="header" href="#quadratische-ergänzung">Quadratische Ergänzung</a></h3>
+<p>\[
+x^2 + px + q = x^2 + 2\frac{p}{2}+(\frac{p}{2})^2-(\frac{p}{2})^2+q ? (x+ \frac{p}{2})^2 - (\frac{p}{2})^2 + q = 0 \\
+\implies x + \frac{p}{2} = \pm \sqrt{(\frac{p}{2})^2-q} \\
+\Leftrightarrow x = -\frac{p}{2} \pm \sqrt{(\frac{p}{2})^2-p}
+\]</p>
+<p>Dafür gibt es 3 Fälle:</p>
+<ol>
+<li>eine Nullstelle \((\frac{p}{2})^2 - q = 0\)</li>
+<li>keine Nullstelle \((\frac{p}{2})^2 - q &lt; 0\)</li>
+<li>zwei Nullstellen \((\frac{p}{2})^2 - q &gt; 0\)</li>
+</ol>
+<p>Wenn die Nullstellen genze Zahlen sind, dann sind die Nullstellen immer Teiler des &quot;absoluten Glieds&quot;.</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="abbildungen"><a class="header" href="#abbildungen">Abbildungen</a></h2>
+<p>Eine Abbildung ordnet jedem Element aus der Menge <em>X</em> ein genau Element aus der Menge <em>Y</em> zu.</p>
+<p>\[f: X \rightarrow Y \\ x\in X \space f(x) \in Y \]</p>
+<p>Wobei <em>X</em> die Definitionsmenge und <em>Y</em> die Zielmenge ist.</p>
+<h3 id="injektiv"><a class="header" href="#injektiv">injektiv</a></h3>
+<p>Eine Abbildung wird injektiv genannt, falls für alle \(x_1, x_2 \in X\) mit \(x_1 \ne x_2 \) auch \(f(x_1) \ne f(x_2)\).
+\[\forall x_1 \in X \space\not\exists x_2 \in X \diagdown \{x_1\}: f(x_1) = f(x_2)\]</p>
+<p>Wenn also kein Element in <em>Y</em> von 2 Elementen aus <em>X</em> &quot;erreicht&quot; werden kann. Dies ist der Fall, wenn der Graph nie die gleiche Höhe hat, also kein X Wert 2 Y Werte hat.</p>
+<h3 id="surjektiv"><a class="header" href="#surjektiv">surjektiv</a></h3>
+<p>Eine Abbildung wird surjektiv genannt, wenn es für alle \(y \in Y\) ein \(x \in X\) gibt mit \(f(x) = y\).</p>
+<p>\[\forall y \in Y \space\exists x \in X: f(x) = y\]</p>
+<p>Wenn alle Elemente in Y ein x haben, dass ihnen zugeordnet wird. Dies ist der Fall wenn der Graph der Funktion kontinuierlich und überall definiert ist.</p>
+<h3 id="grafiken"><a class="header" href="#grafiken">Grafiken</a></h3>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Surjection.svg/180px-Surjection.svg.png" alt="" />
+<em>nicht injektiv, surjektiv</em></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Bijection.svg/180px-Bijection.svg.png" alt="" />
+<em>injektiv, surjektiv</em></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Injection.svg/180px-Injection.svg.png" alt="" />
+<em>injektiv, nicht surjektiv</em></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Not-Injection-Surjection.svg/180px-Not-Injection-Surjection.svg.png" alt="" />
+<em>nicht injektiv, nicht surjektiv</em></p>
+<h2 id="bijektiv"><a class="header" href="#bijektiv">bijektiv</a></h2>
+<p>Eine Funktion heißt bijektiv wenn beide Bedingungen erfüllt sind.</p>
+<p>Seien \(n,m \in \mathbb{N} \space n \ne m\), dann gibt es keine bijektive Abbildung von \(\{1, ... , n\}\) nach \(\{1, ... , m\}\).
+Das lässt sich über das <a href="vorkurs/mathe/./schubfachprinzip.html">Schubfachprinzip</a> zeigen, denn die Mengen können nicht die gleiche Mächtigkeit haben und damit muss es eine Richtung geben in der ein Element entweder
+zwei elementen Zugeordnet wird oder eben eines nicht zugeordnet wird.</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="polynomdivision"><a class="header" href="#polynomdivision">Polynomdivision</a></h2>
+<p>Die Polynomdivision ist eine Methode um ein Polynom zu vereinfachen.</p>
+<ol>
+<li>es muss eine Nullstelle erraten werden.<sup class="footnote-reference"><a href="#1">1</a></sup></li>
+<li>das Polynom durch \((x - Nullstelle)\) teilen</li>
+<li>wie bei der schriftlichen Division vorgehen bis keine Vereinfachungen mehr möglich sind</li>
+</ol>
+<p><a href="https://www.youtube.com/watch?v=CNiS387yEOc">hier schauen lol</a></p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>ganzzahlige Nullstellen müssen immer Teiler des Absolutglieds sein</p>
+</div>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="existenz-und-eindeutigkeit-von-lösungen"><a class="header" href="#existenz-und-eindeutigkeit-von-lösungen">Existenz und Eindeutigkeit von Lösungen</a></h2>
+<p>Für ein Polynom n-ten Grades gibt es:</p>
+<ul>
+<li>höchstens n Lösungen</li>
+<li>wenn n ungerade ist mindestens eine Lösung</li>
+</ul>
+<h3 id="substitution"><a class="header" href="#substitution">Substitution</a></h3>
+<p>Die Substitution ist eine gute Option um Lösungen zu finden.</p>
+<p>\[
+x^4 - 13 x^2 + 36 = 0 \\
+u := x^2 \\
+u^2 - 13u + 36 = 0 \\
+u_{1,2} = \frac{12}{2} \pm \sqrt{(\frac{13}{2})^2 - 36} \\
+u_1 = 9, \space u_2 = 4 \\
+\mathbb{L} = \{-3, -2, 2, 3\}
+\]</p>
+<div id="admonition-note" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-title">
+<div class="admonition-title">
+<div id="admonition-note-title">
+<p>Note</p>
+</div>
+<a class="admonition-anchor-link" href="vorkurs/mathe/loesungen.html#admonition-note"></a>
+</div>
+<div>
+<p>Polynome und vorallem Gleichungssysteme wannimmer möglich geometrisch betrachten. Denn Gleichungssysteme sind nur mehrere Geraden/Flächen/... in einem Raum \(\mathbb{X^n}\). Und verhalten sich
+hinsichtlich iherer Schnittpunkte und der Menge an Schnittpunkten auch so.</p>
+</div>
+</div>
+<h3 id="primfaktorzerlegung"><a class="header" href="#primfaktorzerlegung">Primfaktorzerlegung</a></h3>
+<blockquote>
+<p>Primzahlahlen sind die Atome der natürlichen Zahlen</p>
+</blockquote>
+<p>Sei \(n \in \mathbb{N}\). Dann heißen Primzahlen \(p_1, ..., p_m \) Primfaktorzerlegung von _n*, falls \(n = \displaystyle\prod^{m}_{i=0}{p_i}\).</p>
+<p>\(n \in \mathbb{N}, n \ge 2\). Dann existiert eine Primfaktorzerlegung von <em>n</em>, die bis auf die Reihenfolge der Faktoren eindeutig ist.</p>
+<h4 id="existenz"><a class="header" href="#existenz">Existenz</a></h4>
+<p>Ist <em>n</em> prim, so ist die Aussage trivial.</p>
+<p>Angenommen es gibt ein <em>n</em>, für das keine Primfaktorzerlegung existiert. Dann gibt es ein kleinstes <em>n</em>. <em>n</em> kann keine Primzahl sein, also \(n = kl\) mit \(1 &lt; k,l &lt; n\).
+Also existierten für <em>k</em> und <em>l</em> Primfaktorzerlegung, da <em>n</em> die kleinste Zahl ohne Primfaktorzerlegung ist. Die Vereinigung der beiden Primfaktorzerlegung von <em>k</em> und <em>l</em> ist die
+Primfaktorzerlegung von <em>n</em>.</p>
+<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div class="admonition-title">
+<div id="admonition-info-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="vorkurs/mathe/loesungen.html#admonition-info"></a>
+</div>
+<div>
+<p>Diese Methode nennt sich &quot;Prinzip des kleinsten Verbrechers&quot;</p>
+</div>
+</div>
+<h4 id="eindeutigkeit"><a class="header" href="#eindeutigkeit">Eindeutigkeit</a></h4>
+<p>Angenommen die Primfaktorzerlegung ist nicht eindeutig für \(n \in \mathbb{N}\).</p>
+<p>Wenn <em>n</em> prim, ist es eindeutig.</p>
+<p>Wir können o.B.d.A die kleinste Zahl <em>n</em> wählen für die die Primfaktorzerlegung nicht eindeutig ist. Dann gibt es Primzahlen \(p*1 \le ... \le p*m\) und \(q_1 \le ... \le q_l\) mit
+\(\displaystyle\prod_{i = 0}^{m}{p_i}\) und \(\displaystyle\prod_{i = 0}^{l}{q_i}\). Es gilt \(\{p_1, ... , p_m\}\cap\{q_1, ... , q_l\} = \emptyset\) da wir die kleinste Zahl gewählt
+haben.</p>
+<p>\[
+p_1^2 \ge n, \space q_1^2 \ge n \text{ da } q_2 \ge q_1 \text{ und } l \ge 2 \\
+\implies p_1 q_1 = \sqrt{p_1^2 q_1^2} \le \sqrt{n^2} = n \\
+k := n - q_1 p_1 \ge 0 \\
+\text{Es gilt } q_1 \mid k \text{ da } q_1 \text{ ein Teiler von } n \\
+\text{also } q_1 p_1 \mid k \\
+\text{Andererseits gilt auch} p_1 q_1 \mid (k+p_1q_1) = n
+\]
+Wegen \(\frac{n}{p_1} &lt; n\) muss die Primfaktorzerlegung von \(\frac{n}{p_1}\) eindeutig sein, nämlich \(\{p_2, ... , p_m\}\).
+Wegen \(q \mid \frac{n}{p_1}\) gibt es \(\{r_1, ... , r_s\}\) mit \(\frac{n}{p_1} = q_1 \times r_1 \times ... \times r_s\) als kleinste Zahl mit einer nicht eindeutigen Primfaktorzerlegung.
+Also wurde ein Wiederspruch festgestellt.</p>
+<div id="admonition-note-1" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-1-title">
+<div class="admonition-title">
+<div id="admonition-note-1-title">
+<p>Note</p>
+</div>
+<a class="admonition-anchor-link" href="vorkurs/mathe/loesungen.html#admonition-note-1"></a>
+</div>
+<div>
+<p>Aus meiner Sicht ergibt es Sinn über solche Beweise als rekursive Struktur nachzudenken die eben einen Wiederspruch ergibt, da sie nie terminiert. Denn der Beweis müsste auf das nun kleinste
+Element angewandt werden, dann auf das nun kleinste, dann ...</p>
+</div>
+</div>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="beweistechniken-2"><a class="header" href="#beweistechniken-2">Beweistechniken 2</a></h2>
+<h3 id="vollständige-induktion"><a class="header" href="#vollständige-induktion">Vollständige Induktion</a></h3>
+<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div class="admonition-title">
+<div id="admonition-info-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="vorkurs/mathe/beweistechniken2.html#admonition-info"></a>
+</div>
+<div>
+<p>Diese Beweistechnik ist vorallem für \(n \in \mathbb{N}\) nützlich</p>
+</div>
+</div>
+<p>Es sei <em>A(n)</em> eune unendliche Folge von Aussagen, \(n \in \mathbb{N}\). Es gelte</p>
+<ol>
+<li><em>A(1)</em> ist wahr (IA = Induktionsanfang)</li>
+<li><em>A(n)</em> \(\implies\) <em>A(n+1)</em> für alle <em>n</em> (IS = Induktionsschritt)</li>
+</ol>
+<p>Dann ist <em>A(n)</em> wahr für alle <em>n</em>.</p>
+<h4 id="beispiele"><a class="header" href="#beispiele">Beispiele</a></h4>
+<p>Für alle \(n \in \mathbb{N}\) ist \(n^2 + n \) gerade.</p>
+<ul>
+<li>IA: \(n = 0 : 0^2 + 0 = 0\)</li>
+<li>IS: \[
+n \rightarrow n + 1 \\
+\text{ Wir nehmen an } n^2 + n \text{ gerade für beliebige n. Wir zeigen es gilt dann auch }(n+1)^2 + (n + 1) \text{ gerade } \\
+(n +1 )^2 + (n +1) \\
+n^2 + 2n + 1+ n +1 \\ \Leftrightarrow n^2 + 3n + 2 \\ \Leftrightarrow n^2 + n +2n +2 \\
+n^2 + n\text{ ist gezeigt, wie wir in (IA) gezeigt haben und }2n \text{ ist immer gerade und 2 auch }
+\]
+also ist die Summe gerade.</li>
+</ul>
+<p>Dieser Beweis ist aber für diesen Fall ein bisschen übertrieben, ein <a href="vorkurs/mathe/./beweistechniken.html#direkter-beweis">direkter Beweis</a> tut es hier auch.</p>
+<p>\[
+n^2 + n = n(n+1) \\
+\text{ entweder n oder n+1 ist gerade, da sie benachbarte natürliche Zahlen sind und das Produkt ist dann auch gerade }
+\]</p>
+<hr />
+<p>Für jedes \(n \in \mathbb{N}, n \ge 4\) gilt \(n! \ge 2^n\).</p>
+<ul>
+<li>IA: \(4! = 24 &gt; 16 = 2^4\)</li>
+<li>IS: \[
+n \rightarrow (n+1) \\
+2^{n+1} = 2 \times 2^n \\
+(n+1)! = n! \times (n+1) \\
+\text{ Da } n \ge 4 \text{ können wir sagen dass }n! \text{ schneller wächst als der Faktor 2, um den } 2^n \text{ bei diesem Schritt wächst }
+\]</li>
+</ul>
+<div id="admonition-note" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-title">
+<div class="admonition-title">
+<div id="admonition-note-title">
+<p>Note</p>
+</div>
+<a class="admonition-anchor-link" href="vorkurs/mathe/beweistechniken2.html#admonition-note"></a>
+</div>
+<div>
+<p>Auch diesen Beweis würde ich wieder als rekursiv beschreiben, so wie ich es <a href="vorkurs/mathe/./loesungen.html">hier</a> schon mal gemacht habe. Denn auch hier ist die endlose selbstaufrufung der Beweis.
+Man versucht die Form zu erreichen in der man den bereits bewiesenen Grundzustand erreicht und nur noch über den Rest argumentieren muss.</p>
+</div>
+</div>
+<p>Außerdem ist mir aufgefallen, dass die Syntax auch in Haskell übernommen wurde.</p>
+<pre><code class="language-Haskell">factorial 0 = 1
+factorial n = n * fac (n - 1)
+</code></pre>
+<p>Hier wird natürlich nichts bewiesen sondern definiert und diese funktion terminiert auch. Aber die Struktur die die Funktion in einen Grundfall und einen Fall aufteilt, der dan Grundfall
+zur eigenen Definition ausnutzt fand ich auffallend ähnlich.</p>
+<hr />
+<p>Es gibt auch Fälle bei denen man nicht sofort daran denkt es in natürlichen Zahlen zu beschreiben.</p>
+<p>Zum Beispiel beim Einfärben einer Landkarte. Dabei sollten benachbarte Flächen nicht die gleiche Farbe bekommen. Ecken werden hier nicht betrachtet.</p>
+<p>Jede Landkarte, die Aufteilung eines Gebiets durch Geraden entsteht, kann mit 2 Farben gefärbt werden.
+Induktion durch die Anzahl der Geraden:</p>
+<ul>
+<li>IA: \(n = 1\) eine Gerade, der Fall ist trivial</li>
+<li>IS: \(n \rightarrow (n+1)\). Alle Geraden teilen die Fläche in Flächen die wiederum geteilt werden bis wir am Grundfall ankommen. Dabei muss man aber beachten, dass man bei jeder Teilung die Farben auf einer Seite negieren muss</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="komplexe-zahlen"><a class="header" href="#komplexe-zahlen">komplexe Zahlen</a></h2>
+<p>Eine komplexe Zahl ist ein Ausdruck der Form \(z = a + ib\). <em>i</em> ist die imaginäre Einheit. \(i^2 := -1\)</p>
+<ul>
+<li><em>a</em> nennt man den realen Teil von z (<code>Re(z)</code>)</li>
+<li><em>b</em> nennt man den imaginären Teil von z (<code>Im(z)</code>)</li>
+</ul>
+<p>\[\mathbb{C} := \{ z = a + ib | a,b \in \mathbb{R} \}\]</p>
+<h3 id="rechenregeln"><a class="header" href="#rechenregeln">Rechenregeln</a></h3>
+<p>\[
+z_1 = a_1 + i b_1 \\
+z_2 = a_2 + i b_2 \\
+z_1 + z_2 = (a_1+a_2)+i(b_1 + b_2) \\
+z_1z_2 = (a_1 a_2 - b_1b_2)+i(a_1b_2 + b_1a_2) \\
+\]
+Multiplikation mit reellen Zahlen und die Berechnung des Betrags sind wie bei Vektoren:
+\[|z| = \sqrt{a^2+b^2}\]</p>
+<h3 id="polarschreibweise"><a class="header" href="#polarschreibweise">Polarschreibweise</a></h3>
+<p>Ist \(z \ne 0 \), dann ist \(\frac{z}{|z|} = \alpha + i \beta\)
+\[\alpha = \frac{a}{\sqrt{a^2 + b^2}} \\ \beta = \frac{b}{\sqrt{a^2 + b^2}}\]
+\(\alpha^2 + \beta^2 = 1 \implies (\alpha, \beta)\) liegt auf dem Einheitskreis.</p>
+<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div class="admonition-title">
+<div id="admonition-info-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="vorkurs/mathe/komplex.html#admonition-info"></a>
+</div>
+<div>
+<p>\(z \ne 0\) wenn nicht beide (<em>a</em>, <em>b</em>) gleich null sind</p>
+</div>
+</div>
+<p>Also gibt es ein eindeutig bestimmtes \(\varphi \in [0, 2\pi)\) mit \(\alpha = \cos{\varphi}, \beta = \sin{\varphi}\)</p>
+<p>\[z = |z| \frac{z}{|z|} = |z| (\alpha + i \beta) = |z|(\cos{\varphi}+ i \sin{\varphi})\]
+\(arg(z) := \varphi \)
+\(|z| = r \)
+\[
+e^{i \varphi} = \cos{\varphi} + i \sin{\varphi} \\
+z = re^{i \varphi}
+\]</p>
+<p>Multiplikation ist in der Polarkoordinatenschreibweise einfacher:
+\[
+z_1 = r_1 e^{i \varphi_1} \\
+z_2 = r_2 e^{i \varphi_2} \\
+z_1z_2 = r_1r_2 e^{i(\varphi_2\varphi_1)}
+\]</p>
+<p>Daraus ergibt sich dann auch das ziehen von Wurzeln</p>
+<p>\[
+\sqrt[n]{re^{i \varphi}} = \sqrt[n]{r} e^{i \frac{\varphi}{n}}
+\]</p>
+<p>Und es wird auch ersichtlich warum \(i^2 = -1\). Da der Grad \(\varphi\) bei der Quadratwurzel mit 2 multipliziert wird und wie die gesamten Freiheitsgrade der Gaußschen Ebene haben
+entspricht das einer Vierteldrehung, oder auch \(\frac{\pi}{2}\).</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="binärsystem"><a class="header" href="#binärsystem">Binärsystem</a></h2>
+<p>1 Byte = 8 Bits</p>
+<p>dezimal:
+\[\sum_{i=0}^n{a_i \times 10^i}\]
+binär:
+\[\sum_{i=0}^n{b_i \times 2^i}\]</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>u8::MAX == 255
+<span class="boring">}</span></code></pre></pre>
+<p>$$
+255_{10} = 1111 1111_2
+$$</p>
+<p>256 Zustände</p>
+<p>Durch diese Raumbegrenzungen kann es zu overflows oder Rundungsfehlern kommen.</p>
+<ul>
+<li>Toleranz \(|r_1 - r_2| &lt; \varepsilon;\space\varepsilon\text{ zB. }10^{-7}\)</li>
+</ul>
 
                     </main>
 
@@ -194,22 +712,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
