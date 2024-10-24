@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="de" class="ayu" dir="ltr">
+<html lang="de" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -39,7 +39,7 @@
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "../../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -64,7 +64,7 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('ayu')
+            html.classList.remove('light')
             html.classList.add(theme);
             var body = document.querySelector('body');
             body.classList.remove('no-js')
@@ -195,12 +195,10 @@ u_{1,2} = \frac{12}{2} \pm \sqrt{(\frac{13}{2})^2 - 36} \\
 u_1 = 9, \space u_2 = 4 \\
 \mathbb{L} = \{-3, -2, 2, 3\}
 \]</p>
-<div id="admonition-note" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-title">
+<div id="admonition-note" class="admonition admonish-note">
 <div class="admonition-title">
-<div id="admonition-note-title">
 <p>Note</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-note"></a>
+<p><a class="admonition-anchor-link" href="#admonition-note"></a></p>
 </div>
 <div>
 <p>Polynome und vorallem Gleichungssysteme wannimmer möglich geometrisch betrachten. Denn Gleichungssysteme sind nur mehrere Geraden/Flächen/... in einem Raum \(\mathbb{X^n}\). Und verhalten sich
@@ -218,12 +216,10 @@ hinsichtlich iherer Schnittpunkte und der Menge an Schnittpunkten auch so.</p>
 <p>Angenommen es gibt ein <em>n</em>, für das keine Primfaktorzerlegung existiert. Dann gibt es ein kleinstes <em>n</em>. <em>n</em> kann keine Primzahl sein, also \(n = kl\) mit \(1 &lt; k,l &lt; n\).
 Also existierten für <em>k</em> und <em>l</em> Primfaktorzerlegung, da <em>n</em> die kleinste Zahl ohne Primfaktorzerlegung ist. Die Vereinigung der beiden Primfaktorzerlegung von <em>k</em> und <em>l</em> ist die
 Primfaktorzerlegung von <em>n</em>.</p>
-<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div id="admonition-info" class="admonition admonish-info">
 <div class="admonition-title">
-<div id="admonition-info-title">
 <p>Info</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-info"></a>
+<p><a class="admonition-anchor-link" href="#admonition-info"></a></p>
 </div>
 <div>
 <p>Diese Methode nennt sich "Prinzip des kleinsten Verbrechers"</p>
@@ -246,12 +242,10 @@ k := n - q_1 p_1 \ge 0 \\
 Wegen \(\frac{n}{p_1} &lt; n\) muss die Primfaktorzerlegung von \(\frac{n}{p_1}\) eindeutig sein, nämlich \(\{p_2, ... , p_m\}\).
 Wegen \(q \mid \frac{n}{p_1}\) gibt es \(\{r_1, ... , r_s\}\) mit \(\frac{n}{p_1} = q_1 \times r_1 \times ... \times r_s\) als kleinste Zahl mit einer nicht eindeutigen Primfaktorzerlegung.
 Also wurde ein Wiederspruch festgestellt.</p>
-<div id="admonition-note-1" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-1-title">
+<div id="admonition-note-1" class="admonition admonish-note">
 <div class="admonition-title">
-<div id="admonition-note-1-title">
 <p>Note</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-note-1"></a>
+<p><a class="admonition-anchor-link" href="#admonition-note-1"></a></p>
 </div>
 <div>
 <p>Aus meiner Sicht ergibt es Sinn über solche Beweise als rekursive Struktur nachzudenken die eben einen Wiederspruch ergibt, da sie nie terminiert. Denn der Beweis müsste auf das nun kleinste
@@ -305,6 +299,8 @@ Element angewandt werden, dann auf das nun kleinste, dann ...</p>
         <script src="../../book.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="../../mermaid.min.js"></script>
+        <script src="../../mermaid-init.js"></script>
 
 
     </div>

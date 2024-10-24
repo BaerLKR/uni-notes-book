@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="de" class="ayu" dir="ltr">
+<html lang="de" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -39,7 +39,7 @@
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "../../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -64,7 +64,7 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('ayu')
+            html.classList.remove('light')
             html.classList.add(theme);
             var body = document.querySelector('body');
             body.classList.remove('no-js')
@@ -199,12 +199,10 @@ Multiplikation mit reellen Zahlen und die Berechnung des Betrags sind wie bei Ve
 <p>Ist \(z \ne 0 \), dann ist \(\frac{z}{|z|} = \alpha + i \beta\)
 \[\alpha = \frac{a}{\sqrt{a^2 + b^2}} \\ \beta = \frac{b}{\sqrt{a^2 + b^2}}\]
 \(\alpha^2 + \beta^2 = 1 \implies (\alpha, \beta)\) liegt auf dem Einheitskreis.</p>
-<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div id="admonition-info" class="admonition admonish-info">
 <div class="admonition-title">
-<div id="admonition-info-title">
 <p>Info</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-info"></a>
+<p><a class="admonition-anchor-link" href="#admonition-info"></a></p>
 </div>
 <div>
 <p>\(z \ne 0\) wenn nicht beide (<em>a</em>, <em>b</em>) gleich null sind</p>
@@ -277,6 +275,8 @@ entspricht das einer Vierteldrehung, oder auch \(\frac{\pi}{2}\).</p>
         <script src="../../book.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="../../mermaid.min.js"></script>
+        <script src="../../mermaid-init.js"></script>
 
 
     </div>

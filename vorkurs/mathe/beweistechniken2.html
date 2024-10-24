@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="de" class="ayu" dir="ltr">
+<html lang="de" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -39,7 +39,7 @@
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "../../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -64,7 +64,7 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('ayu')
+            html.classList.remove('light')
             html.classList.add(theme);
             var body = document.querySelector('body');
             body.classList.remove('no-js')
@@ -181,12 +181,10 @@
                     <main>
                         <h2 id="beweistechniken-2"><a class="header" href="#beweistechniken-2">Beweistechniken 2</a></h2>
 <h3 id="vollständige-induktion"><a class="header" href="#vollständige-induktion">Vollständige Induktion</a></h3>
-<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div id="admonition-info" class="admonition admonish-info">
 <div class="admonition-title">
-<div id="admonition-info-title">
 <p>Info</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-info"></a>
+<p><a class="admonition-anchor-link" href="#admonition-info"></a></p>
 </div>
 <div>
 <p>Diese Beweistechnik ist vorallem für \(n \in \mathbb{N}\) nützlich</p>
@@ -227,12 +225,10 @@ n \rightarrow (n+1) \\
 \text{ Da } n \ge 4 \text{ können wir sagen dass }n! \text{ schneller wächst als der Faktor 2, um den } 2^n \text{ bei diesem Schritt wächst }
 \]</li>
 </ul>
-<div id="admonition-note" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-title">
+<div id="admonition-note" class="admonition admonish-note">
 <div class="admonition-title">
-<div id="admonition-note-title">
 <p>Note</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-note"></a>
+<p><a class="admonition-anchor-link" href="#admonition-note"></a></p>
 </div>
 <div>
 <p>Auch diesen Beweis würde ich wieder als rekursiv beschreiben, so wie ich es <a href="./loesungen.html">hier</a> schon mal gemacht habe. Denn auch hier ist die endlose selbstaufrufung der Beweis.
@@ -301,6 +297,8 @@ Induktion durch die Anzahl der Geraden:</p>
         <script src="../../book.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="../../mermaid.min.js"></script>
+        <script src="../../mermaid-init.js"></script>
 
 
     </div>
